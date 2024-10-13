@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10px; /* Added padding for small screens */
+}
+
+.container {
+  width: 100%; /* Allows the container to be responsive */
+  max-width: 350px; /* Maximum width for larger screens */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #e91e63;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.option {
+  border: 2px solid #00c853;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.popular {
+  border-color: #ff4081;
+}
+
+.option-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount {
+  background-color: #ff4081;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff4081;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.price {
+  font-size: 16px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 12px;
+  color: #888;
+}
+
+.select-group {
+  display: flex;
+  flex-direction: column; /* Stack the selects vertically on smaller screens */
+  margin-top: 10px;
+}
+
+.select-group div {
+  margin-bottom: 10px; /* Space between selects */
+}
+
+.select-group select {
+  padding: 8px; /* Increased padding for better touch targets */
+  width: 100%; /* Full width for dropdowns */
+}
+
+/* Responsive styles for the select boxes */
+@media (min-width: 600px) {
+  .select-group {
+    flex-direction: row; /* Stack selects side by side on larger screens */
+    justify-content: space-between; /* Space out the selects */
+  }
+
+  .select-group div {
+    width: 48%; /* Adjust width for two selects side by side */
+    margin-bottom: 0; /* Remove bottom margin */
+  }
+}
+
+.summary {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.delivery {
+  color: #00c853;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 10px;
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #c2185b;
+}
+
+.hidden {
+  display: none; /* Hide content when this class is applied */
+}
+
+.clicked {
+  background-color: #e0f7fa; /* Light cyan background */
+  border-color: #00acc1; /* Dark cyan border */
+}
+
